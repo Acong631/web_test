@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main  # 这里根据你的默认分支修改，可能是 master 或 main
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
